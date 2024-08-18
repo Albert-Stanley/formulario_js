@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Cadastro</h1>
+
+        <form id="meuFormulario">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div class="form-group">
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+
+            <div class="buttons-group">
+                <button onclick="cadastrar()" type="button" class="btn-salvar">Salvar</button>
+                <button type="button" class="btn-remover" onclick="remover()">Remover</button>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="consulta" placeholder="Consultar">
+                <button type="button" class="btn-consultar" onclick="consultar()">Consultar</button>
+            </div>
+        </form>
+
+        <section>
+            <table id="minhaTabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="app/factory.js" ></script>
+    <script src="app/cadastro.js" ></script>
+    <script src="app/consulta.js" ></script>
+    <script src="app/remover.js" ></script>
+</body>
+
+</html>

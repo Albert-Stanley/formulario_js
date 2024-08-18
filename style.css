@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  margin: 50px auto;
+  width: 400px;
+  background-color: #181818;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: #282828;
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.buttons-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-salvar {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-remover {
+  background-color: red;
+  color: white;
+}
+
+.btn-consultar {
+  background-color: #008CBA;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#minhaTabela {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #282828;
+  color: white;
+  text-align: center;
+}
+
+#minhaTabela th,
+#minhaTabela td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#minhaTabela th {
+  background-color: #333;
+}
+
+#minhaTabela tbody tr:nth-child(even) {
+  background-color: #1c1c1c;
+}
